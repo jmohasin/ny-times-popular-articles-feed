@@ -18,6 +18,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running code coverage report
+
+Run `ng test --code-coverage` to execute the code coverage report which will be opened in browser at url `http://localhost:9876/`. Port may be 9875
+You can run `ng test --watch=false --code-coverage` which will not open browser to show the coverage report but will create [/coverage] folder where report will be
+generate which we can open and see in browser.
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
