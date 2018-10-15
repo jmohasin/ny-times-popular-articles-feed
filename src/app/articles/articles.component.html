@@ -1,3 +1,35 @@
 <p>
   articles works!
 </p>
+
+<div class="container">
+  <div class="col-md-12">
+    <h1>My To-Dos</h1>
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th class="text-center">Title</th>
+          <th class="text-center">By</th>       
+          <th class="text-center">Date</th>  
+
+          <th class="text-center">Image</th>
+          
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let article of articles">       
+          <td>{{ article.title }}</td>
+          <td>{{ article.byline }}</td>
+          <td>{{ article.published_date | date: 'EE, MMM dd' }}</td>       
+          
+          <td>{{ article.media[0].mediaMetadata | json }}             {{ article.media[0]['media-metadata'][0].url  }}</td>
+          
+          
+          
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+ </div>

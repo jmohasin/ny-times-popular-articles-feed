@@ -1,4 +1,4 @@
-export interface MediaMetaData {
+export interface MediaMetadata {
     url: string;
     format: string;
     height: number;

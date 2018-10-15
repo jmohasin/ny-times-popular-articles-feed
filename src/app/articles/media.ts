@@ -1,7 +1,7 @@
-import { MediaMetaData } from './media-meta-data';
-export interface Media {
+import { MediaMetadata } from './media-metadata';
+export class Media {
     type: string;
     subtype: string;
     copyright: number;
-    mediaMetadata: MediaMetaData[];
+    mediaMetadata: MediaMetadata[];
 }
